@@ -10,13 +10,13 @@ const Home = () => {
     <section className="home container" id='home'>
       <div className="intro">
         <img src={Me} alt="" className="home__img" />
-        <h1 className="home__name">Bornacelli</h1>
+        <h1 className="home__name">Laura Bornacelli</h1>
         <span className="home__education">
           Desarrolladora Front-End
         </span>
         <HeaderSocials/>
 
-        <a href='#contact' className='btn'>¡Aqui!</a>
+        <a href='#contact' className='btn'>¡Contactame!</a>
 
         <ScrollDown/>
       </div>

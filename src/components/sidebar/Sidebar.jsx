@@ -1,11 +1,12 @@
-import React from 'react'
-import "./sidebar.css"
-import Logo from "../../assets/logo.svg"
+import React from 'react';
+import "./sidebar.css";
+import Logo from "../../assets/logo.svg";
+
+import { House, UserCheck, BriefcaseBusiness, GraduationCap, Layers, SquarePen, MessageCircle } from "lucide-react";
 
 const Sidebar = () => {
   return (
     <aside className='aside'>
-
       <a href='#home' className='nav__logo'>
         <img src={Logo} alt="" />
       </a>
@@ -13,46 +14,45 @@ const Sidebar = () => {
       <nav className='nav'>
         <div className="nav__menu">
           <ul className="nav__list">
-
             <li className="nav__item">
               <a href="#home" className="nav__link">
-                <i className="icon-home"></i>
+                <House size={28} />
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#about" className="nav__link">
-              <i className="icon-user-following"></i>
+                <UserCheck size={28} />
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#services" className="nav__link">
-              <i className="icon-briefcase"></i>
+                <BriefcaseBusiness size={28} />
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#resume" className="nav__link">
-              <i className="icon-graduation"></i>
+                <GraduationCap size={28} />
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#work" className="nav__link">
-              <i className="icon-layers"></i>
+                <Layers size={28} />
               </a>
             </li>
 
-            <li className="nav__item">
+            {/* <li className="nav__item">
               <a href="#blog" className="nav__link">
-              <i className="icon-note"></i>
+                <SquarePen size={28} />
               </a>
-            </li>
+            </li> */}
 
             <li className="nav__item">
               <a href="#contact" className="nav__link">
-              <i className="icon-bubble"></i>
+                <MessageCircle size={28} />
               </a>
             </li>
           </ul>
@@ -63,7 +63,7 @@ const Sidebar = () => {
         <span className='copyright'>&copy; 2025. </span>
       </div>
     </aside>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;

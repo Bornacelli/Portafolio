@@ -10,9 +10,9 @@ import About from './components/about/About';
 import Services from './components/services/Services';
 import Resume from './components/resume/Resume';
 import Portafolio from './components/portafolio/Portafolio';
-import Pricing from './components/pricing/Pricing';
-import Testimonials from './components/testimonials/Testimonials';
-import Blog from './components/blog/Blog';
+// import Pricing from './components/pricing/Pricing';
+// import Testimonials from './components/testimonials/Testimonials';
+// import Blog from './components/blog/Blog';
 import Contact from './components/contact/Contact';
 
 
@@ -27,9 +27,9 @@ const App = () => {
       <Services/>
       <Resume/>
       <Portafolio/>
-      <Pricing/>
+      {/* <Pricing/>
       <Testimonials/>
-      <Blog/>
+      <Blog/> */}
       <Contact/>
 
     </main>

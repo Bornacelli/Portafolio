@@ -17,10 +17,10 @@ const Portafolio = () => {
 
       <div className="work__filters">
         <span className="work__item" onClick={() => setItems(Menu)}>Todos</span>
-        <span className="work__item" onClick={() => filterItem ("Creative")}>Creativos</span>
-        <span className="work__item" onClick={() => filterItem ("Art")}>Artistico</span>
-        <span className="work__item" onClick={() => filterItem ("Design")}>Diseños</span>
-        <span className="work__item" onClick={() => filterItem ("Branding")}>Branding</span>
+        <span className="work__item" onClick={() => filterItem ("Desarrollo")}>Desarrollo</span>
+        <span className="work__item" onClick={() => filterItem ("Mockups")}>Mockups</span>
+        {/* <span className="work__item" onClick={() => filterItem ("Design")}>Diseños</span>
+        <span className="work__item" onClick={() => filterItem ("Branding")}>Branding</span> */}
       </div>
 
       <div className="work__container grid">

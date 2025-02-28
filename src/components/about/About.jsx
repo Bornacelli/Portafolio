@@ -16,16 +16,17 @@ const About = () => {
         <div className="about__data grid">
           <div className="about__info">
             <p className="about__description">
-              Soy un desarrollador web con experiencia en la creación de sitios web responsivos y aplicaciones
+            Soy Desarrolladora frontend enfocada en sitios web responsivos y aplicaciones interactivas. Trabajo con React, con diversas librerías de estilos y diseño UI/UX en Figma para crear experiencias atractivas y funcionales.
             </p>
-            <a href="" className="btn">Descargar CV</a>
+            <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="btn">Descargar CV</a>
+
           </div>
 
           <div className="about__skills grid">
 
             <div className="skills__data">
               <div className="skills__titles">
-                <h3 className="skills__name">Habilidad 1</h3>
+                <h3 className="skills__name">React</h3>
                 <span className="skills__number ">90%</span>
               </div>
 
@@ -36,7 +37,7 @@ const About = () => {
 
             <div className="skills__data">
               <div className="skills__titles">
-                <h3 className="skills__name">Habilidad 2</h3>
+                <h3 className="skills__name">TailWind</h3>
                 <span className="skills__number">80%</span>
               </div>
 
@@ -47,8 +48,8 @@ const About = () => {
 
             <div className="skills__data">
               <div className="skills__titles">
-                <h3 className="skills__name">Habilidad 3</h3>
-                <span className="skills__number">60%</span>
+                <h3 className="skills__name">Figma</h3>
+                <span className="skills__number">70%</span>
               </div>
 
               <div className="skills__bar">

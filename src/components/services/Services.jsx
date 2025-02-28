@@ -9,25 +9,26 @@ const data = [
   {
     id: 1,
     image: Image1,
-    title: "UI/UX design",
+    title: "Desarrollo Frontend",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "Creación de sitios web responsivos y aplicaciones interactivas utilizando React, Vite y diferentes librerías de estilos.",
   },
   {
     id: 2,
     image: Image2,
-    title: "Web Development",
+    title: "Diseño UI/UX",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "Diseño de interfaces atractivas y funcionales en Figma, enfocadas en la experiencia del usuario.",
   },
   {
     id: 3,
     image: Image3,
-    title: "Photography",
+    title: "Optimización Web",
     description:
-      "Lorem ipsum dolor sit amet consectetuer adipiscing elit         aenean commodo ligula eget.",
+      "Mejora del rendimiento, accesibilidad y SEO técnico para lograr una experiencia fluida y eficiente.",
   },
 ];
+
 
 
 
