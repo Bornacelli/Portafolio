@@ -1,3 +1,4 @@
+
 .about__container {
     grid-template-columns: 3fr 9fr;
     column-gap: 1.875rem;
@@ -8,7 +9,7 @@
     background-color: var(--container-color);
     box-shadow: var(--shadow);
     border-radius: var(--border-radius);
-    grid-template-columns: repeat(2 ,1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 1.875rem;
     align-items: flex-start;
     position: relative;
@@ -61,7 +62,6 @@
 
 .skills__percentage {
     display: block;
-
 }
 
 .development {
@@ -97,4 +97,61 @@
 
 .about__title {
     font-size: 1.875rem;
+}
+
+/* Media Queries para hacer la sección responsive */
+
+/* Tablets y dispositivos medianos (768px a 991px) */
+@media screen and (max-width: 991px) {
+    .about__container {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+    
+    .about__img {
+        width: 220px;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .about__data::before {
+        display: none;
+    }
+    
+    .about__boxes {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+}
+
+/* Dispositivos móviles (hasta 767px) */
+@media screen and (max-width: 767px) {
+    .about__data {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+    
+    .about__boxes {
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+    
+    .about__box {
+        justify-content: flex-start;
+    }
+}
+
+/* Dispositivos muy pequeños (hasta 450px) */
+@media screen and (max-width: 450px) {
+    .about__data {
+        padding: 1.25rem;
+    }
+    
+    .about__title {
+        font-size: 1.5rem;
+    }
+    
+    .about__box {
+        column-gap: 1rem;
+    }
 }

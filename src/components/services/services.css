@@ -32,6 +32,11 @@
 
 .services__img {
     margin-bottom: 1.25rem;
+    
+}
+
+.services__img--special {
+    width: 45%;
 }
 
 .services__title {
@@ -50,4 +55,52 @@
 
 .services__card:nth-child(2) .services__description {
     color: var(--title-color);
+}
+
+/* Media Queries para hacer la sección de servicios responsive */
+
+/* Tablets y dispositivos medianos (768px a 991px) */
+@media screen and (max-width: 991px) {
+    .services__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .services__card {
+        padding: 1.5rem;
+    }
+}
+
+/* Dispositivos móviles (hasta 767px) */
+@media screen and (max-width: 767px) {
+    .services__container {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+    
+    .services__card {
+        padding: 1.5rem;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+    
+    .services__title {
+        font-size: calc(var(--h3-font-size) - 0.1rem);
+    }
+}
+
+/* Dispositivos muy pequeños (hasta 450px) */
+@media screen and (max-width: 450px) {
+    .services__card {
+        padding: 1.25rem;
+    }
+    
+    .services__img {
+        width: 60px;
+        height: auto;
+    }
+    
+    .services__title {
+        margin-bottom: 0.75rem;
+    }
 }

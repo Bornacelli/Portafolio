@@ -9,12 +9,10 @@
     cursor: pointer;
     font-weight: var(--font-bold);
     transition: .3s;
-
 }
 
 .work__item:hover {
     color: var(--first-color);
-
 }
 
 .work__container {
@@ -57,7 +55,6 @@
     padding: 0.19rem 0.625rem;
     transform: translateY(-40px);
     transition: .3s;
-    
 }
 
 .work__title {
@@ -98,4 +95,68 @@
 .work__card:hover .work__category {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Media Queries para hacer la sección de trabajo responsive */
+
+/* Tablets y dispositivos medianos (hasta 991px) */
+@media screen and (max-width: 991px) {
+    .work__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .work__filters {
+        flex-wrap: wrap;
+        row-gap: 0.75rem;
+    }
+}
+
+/* Dispositivos móviles (hasta 767px) */
+@media screen and (max-width: 767px) {
+    .work__filters {
+        justify-content: center;
+    }
+    
+    .work__container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .work__title {
+        font-size: calc(var(--h3-font-size) - 0.1rem);
+        top: 3.5rem;
+    }
+}
+
+/* Dispositivos muy pequeños (hasta 450px) */
+@media screen and (max-width: 450px) {
+    .work__filters {
+        column-gap: 1.25rem;
+        font-size: var(--small-font-size);
+    }
+    
+    .work__item {
+        padding: 0.25rem 0;
+    }
+    
+    .work__category {
+        left: 1.25rem;
+        font-size: calc(var(--small-font-size) - 0.1rem);
+    }
+    
+    .work__title {
+        padding: 0 1rem;
+        top: 3.25rem;
+    }
+    
+    .work__button {
+        height: 35px;
+        width: 35px;
+        line-height: 37px;
+        font-size: calc(var(--h3-font-size) - 0.25rem);
+        bottom: 1.25rem;
+        left: 1.25rem;
+    }
 }

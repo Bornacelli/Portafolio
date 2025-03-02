@@ -52,3 +52,50 @@
     margin: 0.5rem 0;
 }
 
+/* Media Queries para hacer la sección de resume responsive */
+
+/* Tablets y dispositivos medianos (hasta 991px) */
+@media screen and (max-width: 991px) {
+    .resume__container {
+        grid-template-columns: 1fr;
+        row-gap: 1.875rem;
+    }
+}
+
+/* Dispositivos móviles (hasta 767px) */
+@media screen and (max-width: 767px) {
+    .timeline {
+        padding: 1.5rem;
+    }
+    
+    .timeline__item {
+        padding-left: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    
+    .timeline__title {
+        font-size: calc(var(--h3-font-size) - 0.1rem);
+    }
+}
+
+/* Dispositivos muy pequeños (hasta 450px) */
+@media screen and (max-width: 450px) {
+    .timeline {
+        padding: 1.25rem;
+    }
+    
+    .timeline__item {
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .timeline__item::before {
+        left: 0.125rem;
+    }
+    
+    .timeline .icon-briefcase,
+    .timeline .icon-graduation {
+        left: -0.5rem;
+        font-size: calc(var(--h2-font-size) - 0.25rem);
+    }
+}
